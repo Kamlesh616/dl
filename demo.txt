@@ -1,0 +1,100 @@
+1) what is csv ?
+A CSV (Comma-Separated Values) file is a simple text file that stores data in a table format. Each line in the file is a row, and each piece of data in a row is separated by a comma. It's like a basic spreadsheet that you can open in programs like Excel or Google Sheets.
+
+2) What is Confusion matrix and Actual value , predicted value ?
+A confusion matrix is a table used to show how well a computer model works when it makes predictions. It compares the actual answers with what the model predicted.
+
+Actual value: What the real answer is (e.g., if an image really is a cat).
+Predicted value: What the model thinks the answer is (e.g., if the model guesses the image is a cat).
+
+
+3) what is epochs and why its use ?
+Epochs are the number of times the learning algorithm goes through the entire training dataset when training a model.
+
+	Why Use Epochs?
+Learning: Each time the model sees the data, it learns a little more. More epochs can help the model learn better.
+Improvement: It allows the model to adjust its predictions based on the errors it made in previous passes.
+
+
+4) Supervised Learning and Unsupervised Learning.
+
+	Supervised Learning:
+	What it is: In supervised learning, the model is 	trained using labeled data. This means the input 	data comes with the correct answer (label).
+
+	Unsupervised Learning:
+	What it is: In unsupervised learning, the model 	is trained using data without labels. The model 	tries to find patterns or groupings on its own.
+
+5) Precision and Recall
+Precision:
+Definition: Precision measures how many of the predicted positive results are actually positive.
+
+Recall:
+Definition: Recall measures how many actual positive cases were correctly identified by the model.
+
+Key Difference:
+Precision focuses on the accuracy of positive predictions (how many predicted positives were correct).
+Recall focuses on the ability to find all actual positives (how many actual positives were found)
+
+
+6)what is  Feedforward neural networks and why we use this ?
+Feedforward Neural Networks are a type of artificial neural network where the information flows in one direction—from the input layer, through hidden layers, to the output layer. There are no cycles or loops in the connections.
+
+	Why We Use Feedforward Neural Networks:
+	Simple Structure: They are easy to understand and 	implement, making them great for beginners.
+	Efficiency: They are generally faster to train 	compared to more complex networks like recurrent 	or convolutional neural networks.
+
+7) what is Image classification model ?
+
+Image Classification Model is a type of machine learning model that is trained to recognize and categorize objects within images. It takes an image as input and outputs a label that represents the object(s) present in the image.
+
+Why We Use Image Classification Models:
+Object Recognition: They help in identifying objects in images, like cats, dogs, cars, or people.
+Automation: Image classification can automate tasks like sorting photos, detecting defects in products, or organizing large image databases.
+
+Applications: 
+Healthcare: Analyzing medical images to detect diseases.
+Security: Recognizing faces or identifying threats in surveillance footage.
+Self-Driving Cars: Identifying traffic signs, pedestrians, and obstacles on the road.
+
+
+8) Gradient descent ?
+
+Gradient Descent is a method used to find the best solution or minimum value of a function, often used in training machine learning models.
+
+How It Works:
+Start Point: Begin at a random point on a graph.
+Find the Slope: Calculate the slope (gradient) of the function at that point.
+Move Downhill: Move a little bit in the direction of the steepest slope (downhill).
+Repeat: Keep repeating this process until you reach the lowest point (minimum).
+Why Use It:
+Gradient descent helps optimize models by adjusting parameters to reduce errors in predictions. It’s like finding the quickest way to the bottom of a hill!
+
+
+9) MNIST Datasets ?
+
+The MNIST dataset (Modified National Institute of Standards and Technology) is a famous collection of handwritten digits used for training and testing image processing systems.
+
+Key Features:
+Images: It contains 70,000 images of handwritten digits (0 to 9).
+Training Set: 60,000 images.
+Test Set: 10,000 images.
+Size: Each image is 28x28 pixels (a small black-and-white square).
+Purpose: It’s widely used to teach and evaluate machine learning models, especially for image classification tasks.
+
+
+10) what is autoencoder and why we use .
+An autoencoder is a type of neural network that learns to compress data and then reconstruct it. It has two main parts:
+
+Encoder: This part takes the input (like an image) and turns it into a smaller version (called a latent representation).
+Decoder: This part takes the smaller version and tries to rebuild the original input.
+
+Why We Use Autoencoders:
+Data Compression: Autoencoders can reduce the size of data while keeping important information, like a zip file.
+Feature Learning: They can find important patterns in data without needing labels, which helps in understanding complex data.
+Anomaly Detection: Autoencoders can spot unusual data points (anomalies) by checking how well they can reconstruct the data. If something doesn’t look like the normal data, the reconstruction won’t be good.
+
+How Autoencoders Are Better:
+Unsupervised Learning: They don’t need labeled data to learn, which is useful when labels are hard to get.
+Flexibility: They can be used for many tasks, like image denoising (removing noise from images) or generating new data similar to what they learned.
+
+In short, autoencoders are useful because they can simplify data and find patterns without needing lots of labeled examples, making them powerful tools in machine learning!
