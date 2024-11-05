@@ -8,28 +8,41 @@ Actual value: What the real answer is (e.g., if an image really is a cat).
 Predicted value: What the model thinks the answer is (e.g., if the model guesses the image is a cat).
 
 
-3) what is epochs and why its use ?
-Epochs are the number of times the learning algorithm goes through the entire training dataset when training a model.
+3) Epochs :-
+Epochs refer to the number of complete passes through the entire training dataset during the training of a machine learning model.
 
-	Why Use Epochs?
-Learning: Each time the model sees the data, it learns a little more. More epochs can help the model learn better.
-Improvement: It allows the model to adjust its predictions based on the errors it made in previous passes.
+Example:
+Suppose you have a dataset with 1,000 samples, and you set a batch size of 100:
+
+Each epoch will involve the model going through 10 batches (1,000 samples / 100 samples per batch).
+After 10 batches, one epoch is complete, and all samples have been processed once.
+If you train for 5 epochs, the model will process all 1,000 samples 5 times, each time updating its weights and improving its learning.
+
+Why Use Multiple Epochs?
+Training a model for more than one epoch allows it to learn more and refine its parameters by iteratively adjusting based on the dataset.
+
+- Batch size
+Batch Size is the number of samples (data points) a machine learning model processes before updating its internal parameters during training.
+Example:
+If you have 1,000 images and a batch size of 100, the model will look at 100 images at a time.
 
 
 4) Supervised Learning and Unsupervised Learning.
 
 	Supervised Learning:
-	What it is: In supervised learning, the model is 	trained using labeled data. This means the input 	data comes with the correct answer (label).
+	What it is: In supervised learning, the model is trained using labeled data. This means the input data comes with the correct answer (label).
 
 	Unsupervised Learning:
-	What it is: In unsupervised learning, the model 	is trained using data without labels. The model 	tries to find patterns or groupings on its own.
+	What it is: In unsupervised learning, the model is trained using data without labels. The model tries to find patterns or groupings on its own.
 
 5) Precision and Recall
-Precision:
-Definition: Precision measures how many of the predicted positive results are actually positive.
+Precision: Precision measures how many of the predicted positive results are actually positive.
+Precision =     True Positives
+         True Positives + False Positives
 
-Recall:
-Definition: Recall measures how many actual positive cases were correctly identified by the model.
+Recall: Recall measures how many actual positive cases were correctly identified by the model.
+Recall =     True Positives
+      True Positives + False Negatives
 
 Key Difference:
 Precision focuses on the accuracy of positive predictions (how many predicted positives were correct).
@@ -40,11 +53,10 @@ Recall focuses on the ability to find all actual positives (how many actual posi
 Feedforward Neural Networks are a type of artificial neural network where the information flows in one direction—from the input layer, through hidden layers, to the output layer. There are no cycles or loops in the connections.
 
 	Why We Use Feedforward Neural Networks:
-	Simple Structure: They are easy to understand and 	implement, making them great for beginners.
-	Efficiency: They are generally faster to train 	compared to more complex networks like recurrent 	or convolutional neural networks.
+	Simple Structure: They are easy to understand and implement, making them great for beginners.
+	Efficiency: They are generally faster to train 	compared to more complex networks like recurrent or convolutional neural networks.
 
 7) what is Image classification model ?
-
 Image Classification Model is a type of machine learning model that is trained to recognize and categorize objects within images. It takes an image as input and outputs a label that represents the object(s) present in the image.
 
 Why We Use Image Classification Models:
@@ -58,7 +70,6 @@ Self-Driving Cars: Identifying traffic signs, pedestrians, and obstacles on the 
 
 
 8) Gradient descent ?
-
 Gradient Descent is a method used to find the best solution or minimum value of a function, often used in training machine learning models.
 
 How It Works:
@@ -71,7 +82,6 @@ Gradient descent helps optimize models by adjusting parameters to reduce errors 
 
 
 9) MNIST Datasets ?
-
 The MNIST dataset (Modified National Institute of Standards and Technology) is a famous collection of handwritten digits used for training and testing image processing systems.
 
 Key Features:
@@ -98,3 +108,14 @@ Unsupervised Learning: They don’t need labeled data to learn, which is useful 
 Flexibility: They can be used for many tasks, like image denoising (removing noise from images) or generating new data similar to what they learned.
 
 In short, autoencoders are useful because they can simplify data and find patterns without needing lots of labeled examples, making them powerful tools in machine learning!
+
+11)  Normalization :-
+Normalization is a way to make data values smaller and more similar to each other.
+
+Why Do We Normalize?
+Easier for Computers: Smaller, similar numbers make it easier and faster for a computer to learn from the data.
+Better Results: When all numbers are on a similar scale, the computer can focus on patterns instead of big differences in numbers.
+Example:
+Imagine you have test scores between 0 and 100 and heights in centimeters. Normalization scales these values so they all fit between 0 and 1, making everything easier to compare.
+
+In short, normalization shrinks and balances data to help computers learn faster and better!
