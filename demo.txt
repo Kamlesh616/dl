@@ -119,3 +119,19 @@ Example:
 Imagine you have test scores between 0 and 100 and heights in centimeters. Normalization scales these values so they all fit between 0 and 1, making everything easier to compare.
 
 In short, normalization shrinks and balances data to help computers learn faster and better!
+
+12) TensorFlow:
+Used for: Building and training machine learning models, especially deep learning.
+Applications: Image recognition (like finding cats in photos), natural language processing (like chatbots), and voice recognition.
+
+Keras:
+Used for: Creating deep learning models quickly and easily; it’s actually a high-level interface that often uses TensorFlow underneath.
+Applications: Quick experiments, building simple neural networks, and rapid prototyping for projects like detecting emotions in text or identifying objects in images.
+
+Theano:
+Used for: Mathematical computations, especially those used in machine learning. It was popular for building deep learning models before newer libraries like TensorFlow came out.
+Applications: Early machine learning projects like handwritten digit recognition (MNIST dataset) and custom mathematical models.
+
+PyTorch:
+Used for: Research and deep learning, especially by people who need flexibility and want to experiment with new ideas.
+Applications: Advanced image analysis, natural language processing, and reinforcement learning (like training AI to play video games or drive virtual cars)
